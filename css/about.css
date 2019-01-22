@@ -1,0 +1,179 @@
+footer{
+    background-color: #e93578;
+}
+
+.content {
+    background-color: white;
+    flex-direction: column;
+}
+
+.my-pic {
+    grid-area: pic;
+    max-width: 180px;
+    max-height: 180px;
+    margin-top: 5px;
+}
+
+.about-desc {
+    grid-area: desc;
+    font-family: "Montserrat", monospace;
+    font-size: 0.5em;
+    line-height: 1.3em;
+    max-height: fit-content;
+    margin-right: 10px;
+    padding: 0 10px 10px 0;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin: 0 auto;
+    border-bottom: #444444 solid 0.5px;
+}
+
+.skills {
+    max-height: fit-content;
+    padding: 10px;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-lvl {
+    margin:auto;
+}
+
+.skill p {
+    width: 50px;
+    font-size: 0.4em;
+    font-family: "Montserrat", monospace;
+}
+
+.skill + .skill {
+    margin-top: 5px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.circle + .circle {
+    margin-left: 15px;
+}
+
+.filled {
+    background-color: #4ee0d7;
+}
+
+.empty {
+    background-color: #c4f4f1;
+}
+
+.skills {
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 644px) {
+    .my-pic {
+        max-width: 180px;
+        max-height: 180px;
+        margin-top: 5px;
+    }
+
+    .about-desc {
+        grid-area: desc;
+        font-family: "Montserrat", monospace;
+        font-size: 0.7em;
+        height: fit-content;
+        width: 90%;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+                "subheading pic "
+                "subheading desc";
+        padding-left: 10px;
+        width: 50%;
+        margin: 0 auto;
+        border: 0;
+        border-right: #444444 solid 0.5px;
+
+    }
+
+    .skill {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .skill + .skill {
+        margin-top: 25px;
+    }
+
+
+    .skill p {
+        width: 80px;
+        font-size: 0.7em;
+    }
+
+
+
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .skills {
+        width: 50%;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1300px) {
+    .my-pic {
+        max-width: 280px;
+        max-height: 280px;
+    }
+    
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill + .skill {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:1600px) {
+    .my-pic {
+        max-width: 380px;
+        max-height: 380px;
+    }
+    
+    .about-desc {
+    font-size: 1em;
+    }
+    
+    .circle {
+        width: 60px;
+        height: 60px;
+    }
+      
+}

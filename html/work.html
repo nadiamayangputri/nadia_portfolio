@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset=utf-8/>
+    <title>Works</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/work.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Montserrat|Roboto+Mono" rel="stylesheet">
+</head>
+<body>
+    <!--heading-->
+    <header>
+        <!--navigation-->
+        <img class="menu-icon close" src="../icons/menu.png" alt="menu">
+        <p class="page-header">
+            Works
+        </p>
+    </header>
+
+    <div class="menu">
+        <h3><a href="../home.html">Home</a></h3>
+        <h3><a href="about.html">About me</a></h3>
+    </div>
+
+    <main class="content">
+        <!--content-->
+        <div class="work">
+            <div class="my-work foodtopia">
+                <h3 class="title">Foodtopia</h3>
+                <img class="site-img" src="../img/foodtopia.PNG" alt="foodtopia">
+
+                <!--<iframe width="380" height="250"-->
+                <!--src="https://www.youtube.com/embed/PqaD5GLJnMk">-->
+                <!--</iframe>-->
+
+                <div class="site-desc">
+                    <p>
+                        Foodtopia is a website I created for one of my subject at University. It aims to increase
+                        children awareness on fresh food ingredients, by providing children to a dictionary of fresh food ingredients,
+                        and allowing them to create food journal.
+                    </p>
+                    <p>
+                        This project was created as a team, and my role was to design and build the front-end portion of
+                        the website.  I was responsible to come up with the design and lead the implementation of the front-end.
+                        I used tools such as moqups, canva and photoshop to design the elements of the page.
+                    </p>
+                </div>
+
+                <a href="https://fast-dusk-78614.herokuapp.com/" target="_blank"><button class="site-link">Visit Live Site</button></a>
+
+                <img class="arrow next" alt="next" onclick="nextSlide(0)" src="../icons/next.png">
+                <img class="arrow prev" alt="prev" onclick="prevSlide(0)" src="../icons/next.png">
+
+                <!-- The dots/circles -->
+                <div class="dots">
+                    <div class="dot active" onclick="currentSlide(1)"></div>
+                    <div class="dot" onclick="currentSlide(2)"></div>
+                </div>
+
+            </div>
+            <div class="my-work icecream" hidden>
+                <h3 class="title">Ice Cream Builder</h3>
+                <img class="site-img" src="../img/ice-cream-builder2.PNG" alt="icecream">
+
+                <div class="site-desc">
+                    <p>
+                        This was my first Javascript self initiated project, it's a small project that helped me get a
+                        grip at programming using Javascript and Javascipt library, jQuery.
+                    </p>
+
+                    <p>
+                        This website lets the user build a custom ice cream, hence its name. There are 4 parts of the ice
+                        cream. The container, ice cream flavor, sauce, and toppings. I used photoshop to create all the
+                        components of the ice cream. My aim was to keep the components  simple yet visually pleasing.
+                    </p>
+
+                    <p>
+                        The biggest challenge for me was to render the components in the correct position in the preview.
+                        However overall, this project was a lot of fun to make.
+                    </p>
+                </div>
+                <a href="http://icecreambuilder.nadiamayangputri.com/" target="_blank"><button class="site-link">Visit Live Site</button></a>
+
+                <img class="arrow next" alt="next" onclick="nextSlide(1)" src="../icons/next.png">
+                <img class="arrow prev" alt="prev" onclick="prevSlide(1)" src="../icons/next.png">
+
+                <div class="dots">
+                    <div class="dot " onclick="currentSlide(1)"></div>
+                    <div class="dot active" onclick="currentSlide(2)"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="contact">
+        <div class="contact-content">
+            <div>
+                Contact Me
+            </div>
+            <img class="contact-arrow arrow up" alt="show contact details" src="../icons/up.png">
+        </div>
+
+        <div id="contact-modal" class="modal">
+            <h2>Contact</h2>
+            <p>Email me at <a href="mailto:n.mayangputri@gmail.com">n.mayangputri@gmail.com</a> </p>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/nadia-mayangputri" target="_blank"><img src="../icons/001-linkedin.svg" alt="Linkedin link" class="linkedin"></a>
+
+                <a href="https://github.com/nadiamayangputri" target="_blank"><img src="../icons/github.svg" alt="Github link" class="github"></a>
+            </div>
+            <div class="credit">
+                <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" target="_blank">Pixel perfect</a> and <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel buddha" target="_blank">Pixel buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+        </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+<!--jQuery CDN-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+
+<!--JS-->
+<script src="../js/menu.js" rel="script"></script>
+<script src="../js/home.js" rel="script"></script>
+<script src="../js/slide.js" rel="script"></script>
+
+</html>

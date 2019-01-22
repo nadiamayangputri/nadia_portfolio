@@ -1,0 +1,104 @@
+
+/*header*/
+.main-header {
+    font-family: monospace;
+    grid-area: header;
+    background-color: #444;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.heading {
+    margin: 5em 1em 0 1em;
+}
+
+.big {
+    font-size: 2.5em;
+}
+
+/*navigation*/
+.nav a:hover {
+    text-decoration: underline ;
+}
+
+.work,
+.about{
+    background-color: #fff;
+}
+
+.work {
+    grid-area: work;
+}
+
+.about {
+    grid-area: about;
+}
+
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+            "about y1 work"
+            "pu1 header header"
+            "p1 contact t1";
+
+}
+
+.pink-2,
+.pink-3,
+.yellow-2,
+.yellow-2,
+.yellow-3,
+.teal-2,
+.purple-2 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    /*header*/
+
+    .heading {
+        margin: 7em 2em 0 2em;
+    }
+
+    .big {
+        font-size: 3em;
+    }
+
+    .pink-2,
+    .pink-3,
+    .yellow-2,
+    .yellow-2,
+    .yellow-3,
+    .teal-2,
+    .purple-2 {
+        display: block;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+                "p1 about y3 work pu1"
+                "y1 t1 header header p2"
+                "pu2 p3 contact t2 y2";
+
+    }
+}
+
+@media (min-width:1600px) {
+    .nav,
+    .contact {
+        font-size: 1.3em;
+    }
+    
+    .heading {
+        font-size: 1.55em;
+    }
+
+    .big {
+        font-size: 3em;
+    }
+}
