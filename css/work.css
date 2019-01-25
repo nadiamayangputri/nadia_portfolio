@@ -39,7 +39,7 @@ footer{
 
 
 .site-img {
-    width: 100%;
+    width: 70%;
 }
 
 .site-img .naviguide-img {
@@ -162,7 +162,7 @@ footer{
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .work {
         padding: 30px;
     }
@@ -262,12 +262,14 @@ footer{
     .arrow-img.prev {
         left: 0px;
     }
-}
 
-@media (min-width: 1150px) {
     .site-img {
         width: 90%
     }
+}
+
+@media (min-width: 1150px) {
+
 
     .site-desc {
         font-size: 0.9em;
@@ -288,6 +290,11 @@ footer{
         margin-top: 3%;
     }
 
+    .site-img {
+        width: 80%
+    }
+
+
     .arrow-img.next {
         right: 20px;
     }
@@ -303,6 +310,7 @@ footer{
         margin-top: 8%;
     }
 
+
     .site-desc {
         font-size: 1em;
     }
@@ -312,23 +320,31 @@ footer{
 @media (min-width: 1600px) {
 
     .site-link {
-        width: 200%;
-        height: 50px
+        /*width: 200%;*/
+        height: 40px
     }
 
+    .site-img {
+        width: 90%
+    }
+
+
     .site-desc {
-        width: 50%;
+        width: 90%;
+        font-size: 1.1em;
         margin: auto
     }
 
-    .my-work {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "title title"
-        "img img"
-        "desc desc"
-        "link link";
-    margin: auto;
-    }
+}
 
+@media (max-height: 700px){
+    .site-link{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-height: 700px) and (min-width: 1024px ) {
+    .site-link, .site-img{
+        margin-bottom: 100px;
+    }
 }
