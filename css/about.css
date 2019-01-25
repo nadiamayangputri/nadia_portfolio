@@ -92,7 +92,7 @@ footer{
     .about-desc {
         grid-area: desc;
         font-family: "Montserrat", monospace;
-        font-size: 0.9em;
+        font-size: 0.8em;
         height: fit-content;
         width: 90%;
     }
