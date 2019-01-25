@@ -17,8 +17,8 @@ footer{
 .about-desc {
     grid-area: desc;
     font-family: "Montserrat", monospace;
-    font-size: 0.5em;
-    line-height: 1.3em;
+    font-size: 0.7em;
+    line-height: 1.5em;
     max-height: fit-content;
     margin-right: 10px;
     padding: 0 10px 10px 0;
@@ -28,14 +28,14 @@ footer{
 .about {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding: 10px 20px;
     margin: 0 auto;
     border-bottom: #444444 solid 0.5px;
 }
 
 .skills {
     max-height: fit-content;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .skill {
@@ -58,9 +58,9 @@ footer{
 }
 
 .circle {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    width: 50px;
+    height: 10px;
+    border-radius: 5%;
 }
 
 .circle + .circle {
@@ -92,7 +92,7 @@ footer{
     .about-desc {
         grid-area: desc;
         font-family: "Montserrat", monospace;
-        font-size: 0.7em;
+        font-size: 0.9em;
         height: fit-content;
         width: 90%;
     }
@@ -129,8 +129,8 @@ footer{
 
 
     .circle {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 20px;
     }
 
 
@@ -152,8 +152,8 @@ footer{
     }
     
     .circle {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 20px;
     }
     
     .skill + .skill {
@@ -173,7 +173,7 @@ footer{
     
     .circle {
         width: 60px;
-        height: 60px;
+        height: 20px;
     }
       
 }

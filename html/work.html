@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Montserrat|Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Montserrat|Roboto+Mono|Quicksand" rel="stylesheet">
 </head>
 <body>
     <!--heading-->
@@ -23,13 +23,15 @@
     </header>
 
     <div class="menu">
-        <h3><a href="../home.html">Home</a></h3>
+        <h3><a href="../index.html">Home</a></h3>
         <h3><a href="about.html">About me</a></h3>
     </div>
 
     <main class="content">
         <!--content-->
         <div class="work">
+
+
             <div class="my-work foodtopia">
                 <h3 class="title">Foodtopia</h3>
                 <img class="site-img" src="../img/foodtopia.PNG" alt="foodtopia">
@@ -53,16 +55,128 @@
 
                 <a href="https://fast-dusk-78614.herokuapp.com/" target="_blank"><button class="site-link">Visit Live Site</button></a>
 
-                <img class="arrow next" alt="next" onclick="nextSlide(0)" src="../icons/next.png">
-                <img class="arrow prev" alt="prev" onclick="prevSlide(0)" src="../icons/next.png">
+                <img class="arrow prev small-prev" alt="prev" onclick="prevSlide(0)" src="../icons/next.png">
+                <img class="arrow next small-next" alt="next" onclick="nextSlide(0)" src="../icons/next.png">
+
 
                 <!-- The dots/circles -->
                 <div class="dots">
-                    <div class="dot active" onclick="currentSlide(1)"></div>
-                    <div class="dot" onclick="currentSlide(2)"></div>
+                    <img class="arrow prev large-prev" alt="prev" onclick="prevSlide(0)" src="../icons/next.png">
+
+                    <div class="dot active"></div>
+                    <div class="dot "></div>
+                    <div class="dot"></div>
+                    <div class="dot "></div>
+
+                    <img class="arrow next large-next" alt="next" onclick="nextSlide(0)" src="../icons/next.png">
+
                 </div>
 
             </div>
+
+            <div class="my-work sleigh" hidden>
+                <h3 class="title">Sleigh group</h3>
+                <img class="site-img" src="../img/Sleigh.png" alt="Sleigh screenshot">
+
+                <div class="site-desc">
+                    <p>
+                        This site is a brochure website for Sleigh group, created during my internship with the company.
+                        I developed the website using HTML, CSS, and JavaScript. And I designed the website using an online mock up tool,
+                        Moqups.
+                    </p>
+
+                    <p>
+                        The design of the website uses minimalistic colours such as dark grey, blue and white. To add a
+                        little uniqueness to the simplistic site, I designed the layout to have slanted sections.
+                    </p>
+
+                </div>
+                <a href="http://sleigh.group/" target="_blank"><button class="site-link">Visit Live Site</button></a>
+
+                <img class="arrow prev small-prev" alt="prev" onclick="prevSlide(1)" src="../icons/next.png">
+                <img class="arrow next small-next" alt="next" onclick="nextSlide(1)" src="../icons/next.png">
+
+                <div class="dots">
+                    <img class="arrow prev large-prev" alt="prev" onclick="prevSlide(1)" src="../icons/next.png">
+
+                    <div class="dot "></div>
+                    <div class="dot active"></div>
+                    <div class="dot "></div>
+                    <div class="dot "></div>
+
+                    <img class="arrow next large-next" alt="next" onclick="nextSlide(1)" src="../icons/next.png">
+                </div>
+            </div>
+
+            <div class="my-work naviguide" hidden>
+                <h3 class="title">NaviGuide</h3>
+                <div class="site-img">
+                    <div class="img-slideshow">
+                        <img class="naviguide-img" src="../img/naviguide/0.jpg" alt="screenshot">
+                        <img class="naviguide-img" src="../img/naviguide/1.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/2.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/3.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/4.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/5.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/6.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/7.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/8.jpg" alt="screenshot" hidden>
+                        <img class="naviguide-img" src="../img/naviguide/9.jpg" alt="screenshot" hidden>
+
+                    </div>
+                    <img class="arrow-img prev" alt="prev" onclick="plusSlides(-1)" src="../icons/next.png">
+                    <img class="arrow-img next" alt="next"  onclick="plusSlides(1)" src="../icons/next.png">
+
+                    <!--<div class="img-dots">-->
+                    <!--<span class="img-dot" onclick="currentSlide(0)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(1)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(2)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(3)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(4)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(5)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(6)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(7)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(8)"></span>-->
+                    <!--<span class="img-dot" onclick="currentSlide(9)"></span>-->
+
+                    <!--</div>-->
+                </div>
+
+
+                <div class="site-desc">
+                    <p>
+                        NaviGuide is an android navigation app. This app is targeted for the elderly and people
+                        in need of assistance when travelling. What differentiates this app from a regular navigation
+                        app is that it facilitates real-time communication and cooperation between the assisted persons and a
+                        set of nominated persons who can assist the assisted person on their travels and management
+                        of their destinations.
+                    </p>
+
+                    <p>
+                        This app was a university project, done in a group of 5. My role in the
+                        group was to design the user interface of the app and implement it using XML,
+                        along with the GUI tools at Android studio. The menu tab is made accessible at all times by keeping
+                        it fixed to the bottom of the screen. As for the colour scheme, I opted for bright contrasting
+                        colours that can be easily navigated by an elderly.
+                    </p>
+
+                </div>
+
+                <img class="arrow prev small-prev" alt="prev" onclick="prevSlide(2)" src="../icons/next.png">
+                <img class="arrow next small-next" alt="next" onclick="nextSlide(2)" src="../icons/next.png">
+
+                <div class="dots">
+                    <img class="arrow prev large-prev" alt="prev" onclick="prevSlide(2)" src="../icons/next.png">
+
+                    <div class="dot "></div>
+                    <div class="dot "></div>
+                    <div class="dot active"></div>
+                    <div class="dot "></div>
+
+                    <img class="arrow next large-next" alt="next" onclick="nextSlide(2)" src="../icons/next.png">
+                </div>
+            </div>
+
             <div class="my-work icecream" hidden>
                 <h3 class="title">Ice Cream Builder</h3>
                 <img class="site-img" src="../img/ice-cream-builder2.PNG" alt="icecream">
@@ -83,17 +197,27 @@
                         The biggest challenge for me was to render the components in the correct position in the preview.
                         However overall, this project was a lot of fun to make.
                     </p>
+
+
                 </div>
                 <a href="http://icecreambuilder.nadiamayangputri.com/" target="_blank"><button class="site-link">Visit Live Site</button></a>
 
-                <img class="arrow next" alt="next" onclick="nextSlide(1)" src="../icons/next.png">
-                <img class="arrow prev" alt="prev" onclick="prevSlide(1)" src="../icons/next.png">
+                <img class="arrow prev small-prev" alt="prev" onclick="prevSlide(3)" src="../icons/next.png">
+                <img class="arrow next small-next" alt="next" onclick="nextSlide(3)" src="../icons/next.png">
 
                 <div class="dots">
-                    <div class="dot " onclick="currentSlide(1)"></div>
-                    <div class="dot active" onclick="currentSlide(2)"></div>
+                    <img class="arrow prev large-prev" alt="prev" onclick="prevSlide(3)" src="../icons/next.png">
+
+                    <div class="dot "></div>
+                    <div class="dot "></div>
+                    <div class="dot "></div>
+                    <div class="dot active"></div>
+
+                    <img class="arrow next large-next" alt="next" onclick="nextSlide(3)" src="../icons/next.png">
+
                 </div>
             </div>
+
 
         </div>
     </main>
@@ -116,8 +240,11 @@
                 <a href="https://github.com/nadiamayangputri" target="_blank"><img src="../icons/github.svg" alt="Github link" class="github"></a>
             </div>
             <div class="credit">
-                <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" target="_blank">Pixel perfect</a> and <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel buddha" target="_blank">Pixel buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-        </div>
+                <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect"
+                                    target="_blank">Pixel perfect</a> and
+                    <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel buddha" target="_blank">Pixel buddha</a>
+                    from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+            </div>
         </div>
 
     </footer>
